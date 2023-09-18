@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">CliWatch</string>
+    <string name="calculate">Calculate</string>
+    <string name="track_data">Track Data</string>
+    <string name="result">Result</string>
+    <string name="Result">Result</string>
+    <string name="number">Number</string>
+    <string name="in_litres">In Litres</string>
+    <string name="water_consumed">Water Consumed</string>
+    <string name="waste_produced">Waste Produced</string>
+    <string name="travelling_using_vehicles">Transportation</string>
+    <string name="member_in_family">Family Members</string>
+    <string name="in_garbage_bags_used">Garbage Bags Used</string>
+    <string name="in_kms">In KM</string>
+    <string name="name">Name</string>
+    <string name="day">Date</string>
+    <string name="write_data">Submit</string>
+    <string name="read_data">Read Data</string>
+    <string name="delete_all">Delete All</string>
 </resources>
