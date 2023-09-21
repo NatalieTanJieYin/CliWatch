@@ -63,4 +63,8 @@ dependencies {
 
     //ViewModel
     implementation ("androidx.lifecycle:lifecycle-extensions:2.1.0")
+
+    //Navigation
+    implementation("androidx.navigation:navigation-fragment-ktx:2.1.0")
+    implementation ("androidx.navigation:navigation-ui-ktx:2.1.0")
 }

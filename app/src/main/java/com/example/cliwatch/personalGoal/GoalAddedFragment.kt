@@ -10,7 +10,6 @@ import kotlinx.android.synthetic.main.fragment_goal_added.view.goal_title
 import kotlinx.android.synthetic.main.fragment_goal_added.view.add_goal
 import kotlinx.android.synthetic.main.fragment_goal_added.view.home
 import com.example.cliwatch.R
-import com.example.cliwatch.personalGoal.GoalFragment
 import com.example.cliwatch.personalGoal.data.GoalViewModel
 
 class GoalAddedFragment : Fragment() {
@@ -29,7 +28,7 @@ class GoalAddedFragment : Fragment() {
             arguments?.getString("Title")?.plus(" " + getString(R.string.added))
                 ?: getString(R.string.goal_added)
         root.add_goal.setOnClickListener {
-            replaceFragment(AddGoalFragment())
+            replaceFragment(AddGoalsFragment())
         }
         root.home.setOnClickListener {
             replaceFragment(GoalFragment())

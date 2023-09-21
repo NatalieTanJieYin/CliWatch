@@ -35,4 +35,7 @@
     <string name="no_notes">No Notes</string>
     <string name="no_goals">No Goals</string>
     <string name="delete">Delete</string>
+    <string name="start_goals">Start goals</string>
+    <string name="start_now">Start now</string>
+    <string name="required">Required</string>
 </resources>

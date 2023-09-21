@@ -18,7 +18,7 @@ import com.example.cliwatch.personalGoal.data.Goal
 import com.example.cliwatch.personalGoal.data.GoalViewModel
 
 
-class AddGoalFragment : Fragment() {
+class AddGoalsFragment : Fragment() {
 
     private lateinit var goalViewModel: GoalViewModel
 

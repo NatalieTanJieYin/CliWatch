@@ -14,13 +14,12 @@ import kotlinx.android.synthetic.main.fragment_goal.view.filled_exposed_dropdown
 import kotlinx.android.synthetic.main.fragment_goal.view.menu_items
 import com.example.cliwatch.R
 import androidx.appcompat.app.AppCompatActivity
-import com.example.cliwatch.personalGoal.AddGoalsFragment
 import com.example.cliwatch.personalGoal.data.GoalViewModel
 import android.widget.EditText
 import androidx.appcompat.app.AlertDialog
 import com.example.cliwatch.personalGoal.data.Goal
 import com.example.cliwatch.personalGoal.data.GoalDetails
-import com.example.cliwatch.personalGoal.isCompleted
+import com.example.cliwatch.personalGoal.data.isCompleted
 
 
 class GoalFragment : Fragment() {
@@ -45,7 +44,7 @@ class GoalFragment : Fragment() {
             if (it.isEmpty()) {
                 root.menu_items.visibility = View.GONE
                 textView.background = resources.getDrawable(R.drawable.ic_circle_gradient)
-                title = getString(R.string.start_challenging)
+                title = getString(R.string.start_goals)
                 goalViewModel.text.value = getString(R.string.start_now)
             } else {
                 goal = it?.find { selected -> selected.isSelected }
@@ -101,7 +100,7 @@ class GoalFragment : Fragment() {
             it.completedDays = goal?.completedDays?.plus(1) ?: 0
             goalViewModel.updateGoal(goal)
             goalViewModel.text.value = goal?.completedDays.toString()
-        } ?: replaceFragment(AddGoalFragment())
+        } ?: replaceFragment(AddGoalsFragment())
     }
 
     private fun captureNotes(goalId: Long): GoalDetails {
