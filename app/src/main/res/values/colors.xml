@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="calculator_bk_color">#C0E6BA</color>
     <color name="whiteTextColor">#fff</color>
+    <color name="colorPrimary">#0353F4</color>
 </resources>

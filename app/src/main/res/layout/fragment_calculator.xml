@@ -7,6 +7,8 @@
     android:background="@color/calculator_bk_color"
     tools:context=".calculator.CalculatorFragment">
 
+
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,20 +17,36 @@
         app:cardCornerRadius="10dp"
         tools:ignore="MissingConstraints">
 
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="serif"
+                android:text="@string/calculateTitle"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
             <!-- Member in Family Input -->
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputName"
                 style="@style/parent"
-                android:layout_marginTop="@dimen/inputViewsMargin"
-                android:hint="@string/member_in_family"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="96dp"
+                android:layout_marginTop="@dimen/inputViewsMargin"
+                android:hint="@string/member_in_family">
 
                 <EditText
                     android:id="@+id/editTextTextPersonName"
@@ -42,10 +60,10 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputName2"
                 style="@style/parent"
-                android:layout_marginTop="@dimen/inputViewsMargin"
-                android:hint="@string/water_consumed"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="100dp"
+                android:layout_marginTop="@dimen/inputViewsMargin"
+                android:hint="@string/water_consumed">
 
                 <EditText
                     android:id="@+id/editTextTextPersonName2"
@@ -59,10 +77,10 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputName3"
                 style="@style/parent"
-                android:layout_marginTop="@dimen/inputViewsMargin"
-                android:hint="@string/travelling_using_vehicles"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="105dp"
+                android:layout_marginTop="@dimen/inputViewsMargin"
+                android:hint="@string/travelling_using_vehicles">
 
                 <EditText
                     android:id="@+id/editTextTextPersonName3"
@@ -76,10 +94,10 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputName4"
                 style="@style/parent"
-                android:layout_marginTop="@dimen/inputViewsMargin"
-                android:hint="@string/waste_produced"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="107dp"
+                android:layout_marginTop="@dimen/inputViewsMargin"
+                android:hint="@string/waste_produced">
 
                 <EditText
                     android:id="@+id/editTextTextPersonName4"
@@ -94,9 +112,11 @@
                 android:id="@+id/button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:height="@dimen/calButtonHeight"
+                android:minHeight="48dp"
                 android:onClick="calculation"
                 android:text="@string/calculate"
-                android:layout_gravity="center"
                 tools:ignore="MissingClass" />
 
         </LinearLayout>

@@ -18,7 +18,7 @@ class CalculatorResult : AppCompatActivity() {
         val messageTextView: TextView = findViewById(R.id.textView6)
         messageTextView.text = message
 
-        val value = message?.toInt()
+        val value = message?.toIntOrNull()
         if (value != null) {
             if(value<30){
                 imageview.setImageResource(id2)

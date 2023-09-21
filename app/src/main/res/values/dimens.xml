@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="inputViewsMargin">10dp</dimen>
+    <dimen name="calButtonHeight">48dp</dimen>
+    <dimen name="dimen_text_40">40sp</dimen>
+    <dimen name="dimen_text_16">16sp</dimen>
+    <dimen name="dimen_8">8dp</dimen>
+    <dimen name="dimen_16">16dp</dimen>
+    <dimen name="dimen_28">28dp</dimen>
+    <dimen name="dimen_120">120dp</dimen>
+    <dimen name="dimen_text_20">20sp</dimen>
+    <dimen name="dimen_52">52dp</dimen>
+    <dimen name="dimen_24">24dp</dimen>
+    <dimen name="dimen_40">40dp</dimen>
+    <dimen name="dimen_48">48dp</dimen>
+    <dimen name="dimen_80">80dp</dimen>
+    <dimen name="dimen_20">20dp</dimen>
+    <dimen name="dimen_4">4dp</dimen>
+    <dimen name="dimen_36">36dp</dimen>
 </resources>

@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-android-extensions")
 }
 
 android {
@@ -60,4 +61,6 @@ dependencies {
     implementation ("androidx.lifecycle:lifecycle-viewmodel:2.4.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.4.0")
 
+    //ViewModel
+    implementation ("androidx.lifecycle:lifecycle-extensions:2.1.0")
 }
