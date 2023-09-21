@@ -53,7 +53,7 @@ dependencies {
     implementation ("androidx.cardview:cardview:1.0.0")
     implementation ("br.com.simplepass:loading-button-android:2.1.0")
 
-    // Room Database
+    //Room Database
     implementation ("androidx.room:room-runtime:2.4.0")
     annotationProcessor ("androidx.room:room-compiler:2.4.0")
 
